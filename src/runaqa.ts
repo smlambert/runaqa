@@ -19,7 +19,7 @@ export async function runaqaTest(
   //Testing
   // TODO : make run functional using get.sh?
   await exec.exec(
-    'git clone --depth 1 https://github.com/AdoptOpenJDK/openjdk-tests.git'
+    'git clone -b test https://github.com/sophia-guo/openjdk-tests.git'
   )
   process.chdir('openjdk-tests')
   await exec.exec('./get.sh')
